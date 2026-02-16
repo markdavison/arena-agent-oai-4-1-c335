@@ -59,7 +59,7 @@ async function main(): Promise<void> {
   const taostatsClient = await createMCPClient({
     transport: {
       type: "http",
-      url: "https://mcp.taostats.io?tools=data",
+      url: "https://mcp.taostats.io?tools=data,trading",
       headers: taostatsHeaders,
     },
   });
